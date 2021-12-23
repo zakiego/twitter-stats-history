@@ -1,8 +1,8 @@
 name: Update User Stats
 
-on: push
-#   schedule:
-#     - cron: "0 17 * * *" #run every at 17:00:00s UTC / 00.00 GMT +7 / 01.00 GMT +8
+on:
+  schedule:
+    - cron: "0 17 * * *" #run every at 17:00:00s UTC / 00.00 GMT +7 / 01.00 GMT +8
 
 jobs:
   run:
