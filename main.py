@@ -7,6 +7,7 @@ def get_data(username):
     resp = req.get(url + username)
     data = resp.json()['data']
     df = pd.DataFrame(data, index=[0])
+    df['timestamp'] = pd.to_datetime(df['timestamp'])
     return df
 
 
